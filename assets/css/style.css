@@ -1,5 +1,84 @@
+.font-ta {
+  font-family: "Mukta Malar", sans-serif;
+}
+
+.color-anim {
+  animation: color-change 10s infinite;
+  transition: 500ms;
+}
+
 * {
-  background-color: lightcoral;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  background-color: green;
+  border-radius: 6px;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.btn-primary {
+  background-color: green;
+  color: #fff;
+}
+.btn:hover {
+  background-color: red;
+}
+
+.header {
+  padding: 1rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.header-menus {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.header-menus--item {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 200ms;
+}
+.header-menus--item a {
+  color: #242424;
+}
+
+a:hover {
+  color: green;
+}
+
+a.active {
+  color: green;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

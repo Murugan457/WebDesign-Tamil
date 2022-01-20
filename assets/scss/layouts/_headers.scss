@@ -1,0 +1,45 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+@use "../abstract/variable"as var;
+@use "../abstract/function"as func;
+$font-primary:"Poppins",
+sans-serif;
+$font-tamil:"Mukta Malar",
+sans-serif;
+
+
+.header {
+    padding: 1rem 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.header-menus {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.header-menus--item {
+    margin-right: 1.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 200ms;
+
+    a {
+        color: #242424;
+    }
+
+}
+
+
+a:hover {
+    color:func.theme-colors("primary");
+}
+
+a.active {
+    color:func.theme-colors("primary");
+}
